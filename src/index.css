@@ -1,0 +1,18 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* { font-family: 'Inter', sans-serif; }
+body { @apply bg-[#fdf8f7] text-[#2d1a1a] dark:bg-[#0f0a0a] dark:text-[#f5e9e9]; }
+.glass { @apply bg-white/80 backdrop-blur-xl border border-white/20 dark:bg-[#1a1111]/80 dark:border-[#2a1a1a]/30; }
+.card-telkom { @apply bg-white rounded-2xl border border-[#f0e0e0] shadow-card dark:bg-[#1a1212] dark:border-[#2a1e1e]; }
+.btn-telkom { @apply bg-[#C1272D] hover:bg-[#A51E23] text-white font-semibold rounded-xl transition-all shadow-telkom; }
+.badge-billcomp { @apply bg-[#C1272D] text-white; }
+.badge-delivery { @apply bg-[#8B1A1A] text-white; }
+.badge-collect { @apply bg-[#4a5568] text-white; }
+.progress-telkom { @apply bg-[#C1272D]; }
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { @apply bg-transparent; }
+::-webkit-scrollbar-thumb { @apply bg-[#C1272D]/30 rounded-full; }
+::-webkit-scrollbar-thumb:hover { @apply bg-[#C1272D]/50; }
